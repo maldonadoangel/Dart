@@ -12,13 +12,13 @@ main(){
   villanos.add('Duende verde');
   villanos.add('Duende verde');
   villanos.add('Duende verde');
-  print(villanos);
+  // print(villanos);
   //Convertimos una lista en un set y luego ese set de nuevo a una lista, esto para eliminar los valores duplicados
   var villanosSet = villanos.toSet();
-  print(villanosSet);
+  // print(villanosSet);
   var villanosLista = villanosSet.toList();
-  print(villanosLista); 
-
+  // print(villanosLista); 
+// 
 
   // ================ SETS, puede ser iterable igual que las listas, pero los sets no permite tener valores duplicados
 
@@ -28,5 +28,25 @@ main(){
   villanos3.add('Duende verde');
   villanos3.add('Duende verde');
   villanos3.add('Duende verde');
-  print(villanos3);
+  // print(villanos3);
+
+  //====================Maps, tambien se le conocen como diccionarios/ objetos literales
+  Map<String, dynamic> ironman = {
+    'nombre': 'Tony Stark',
+    'Poder': 'Inteligencia y dinero',
+    'Nivel': 9000,
+  };
+
+  print(ironman['Poder']);
+
+  //Otra forma de declarar un map
+  Map<String, dynamic> capitan = new Map();
+
+  capitan.addAll({
+    'Nombre': 'Steve',
+    'Poder': 'Super Soldado',
+    'Nivel': 5000,
+  });
+
+  print(capitan);
 }
