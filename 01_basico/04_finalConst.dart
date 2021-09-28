@@ -19,4 +19,13 @@ main(){
   //Const es más estricta a la hora de modificar, ya que no permite de ninguna manera su modificacion, con final nos permite agregar datos a nuestro lista
   print(personasFinal);
   // print(personasConst); 
+
+
+  // Late 
+
+  late final double x;
+
+  x = 30;
+
+  print(x);
 }
