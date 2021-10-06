@@ -12,8 +12,11 @@ class Persona {
   // this.edad = edad;
   // this.nombre = nombre;
   // }
-
+  //Constructores
   Persona({this.edad = 0, this.nombre = 'Sin nombre'});
+  Persona.persona30(this.nombre) {
+    this.edad = 30;
+  }
 
   //Gets y Sets, podemos aplicarle metodos a nuestro getter
   // String? get bio {
